@@ -1,0 +1,4 @@
+D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.Core\bin\Debug\ZolyFramework.Core.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.Core\bin\Debug\ZolyFramework.Core.pdb
+D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.Core\obj\Debug\ZolyFramework.Core.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.Core\obj\Debug\ZolyFramework.Core.pdb

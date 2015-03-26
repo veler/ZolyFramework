@@ -1,0 +1,11 @@
+﻿<windows:ZolyWindow x:Class="ThemeSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:windows="clr-namespace:ZolyFramework.UI.Windows;assembly=ZolyFramework.UI"
+        xmlns:controls="clr-namespace:ZolyFramework.UI.Windows.Controls;assembly=ZolyFramework.UI"
+        Title="MainWindow" Height="350" Width="525"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <controls:ZolyRaisedButton Content="Responsive Window" VerticalAlignment="Top" Margin="41,40,10,0" Click="Button_Click" Width="Auto"/>
+    </Grid>
+</windows:ZolyWindow>

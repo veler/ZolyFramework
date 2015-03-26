@@ -1,0 +1,53 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    
+    <!-- COLORS -->
+    <SolidColorBrush x:Key="ThemeBrush" Color="Blue"/>
+    <SolidColorBrush x:Key="DarkerThemeBrush" Color="Blue" />
+    
+    <SolidColorBrush x:Key="BackgroundBrush" Color="#FAFAFA" />
+    <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#e2e2e2" />
+
+    <SolidColorBrush x:Key="HoverBrush" Color="Blue" />
+    <SolidColorBrush x:Key="PressedBrush" Color="Blue" />
+    
+    <SolidColorBrush x:Key="TextBrush" Color="#444444" />
+    <SolidColorBrush x:Key="DisabledTextBrush" Color="#9e9e9e" />
+    <SolidColorBrush x:Key="TextHoverBrush" Color="#FAFAFA"/>
+    <SolidColorBrush x:Key="TextPressedBrush" Color="#FAFAFA"/>
+
+    
+    <!-- ZolyWindow -->
+    <SolidColorBrush x:Key="ZolyWindowBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyWindowBackgroundBrush" Color="{Binding Color, Source={StaticResource BackgroundBrush}}"/>
+    <Color x:Key="ZolyWindowDropShadowBrush">#A7A7A7</Color>
+
+
+    <!-- ZolyRaisedButton -->
+    <SolidColorBrush x:Key="ZolyButtonRaisedEnabledBackgroundBrush" Color="{Binding Color, Source={StaticResource BackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedEnabledBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyButtonRaisedFocusedBackgroundBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedFocusedBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedFocusedTextBrush" Color="{Binding Color, Source={StaticResource TextHoverBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyButtonRaisedHoverBackgroundBrush" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedHoverBorderBrush" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedHoverTextBrush" Color="{Binding Color, Source={StaticResource TextHoverBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyButtonRaisedPressedBackgroundBrush" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedPressedBorderBrush" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedPressedTextBrush" Color="{Binding Color, Source={StaticResource TextPressedBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyButtonRaisedDisabledBackgroundBrush" Color="{Binding Color, Source={StaticResource DisabledBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedDisabledBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyButtonRaisedDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+    <!-- ZolyFlatButton -->
+    <SolidColorBrush x:Key="ZolyButtonFlatEnableBackgroundBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyButtonFlatEnableTextBrush" Color="{Binding Color, Source={StaticResource TextHoverBrush}}"/>
+
+</ResourceDictionary>

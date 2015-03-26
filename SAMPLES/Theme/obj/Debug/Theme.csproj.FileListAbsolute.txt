@@ -1,0 +1,20 @@
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\bin\Debug\Theme.exe.config
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\bin\Debug\Theme.exe
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\bin\Debug\Theme.pdb
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\bin\Debug\ZolyFramework.UI.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\bin\Debug\ZolyFramework.Core.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\bin\Debug\ZolyFramework.UI.pdb
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\bin\Debug\ZolyFramework.Core.pdb
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\Theme.csprojResolveAssemblyReference.cache
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\MainWindow.baml
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\Responsive Window\ResponsiveLayoutWindow.baml
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\App.baml
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\MainWindow.g.cs
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\Responsive Window\ResponsiveLayoutWindow.g.cs
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\App.g.cs
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\Theme_MarkupCompile.cache
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\Theme.g.resources
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\ThemeSample.Properties.Resources.resources
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\Theme.csproj.GenerateResource.Cache
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\Theme.exe
+D:\Development\Projets\Projets Sources\Zoly Framework\SAMPLES\Theme\obj\Debug\Theme.pdb

@@ -1,0 +1,14 @@
+D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI.Tests\bin\Debug\ZolyFramework.UI.Tests.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI.Tests\bin\Debug\ZolyFramework.UI.Tests.pdb
+D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI.Tests\obj\Debug\ZolyFramework.UI.Tests.csprojResolveAssemblyReference.cache
+D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI.Tests\obj\Debug\ZolyFramework.UI.Tests.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI.Tests\obj\Debug\ZolyFramework.UI.Tests.pdb
+D:\Development\Projets\Projets Sources\Zoly Framework\UNIT TESTS\ZolyFramework.UI.Tests\bin\Debug\ZolyFramework.UI.Tests.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\UNIT TESTS\ZolyFramework.UI.Tests\bin\Debug\ZolyFramework.UI.Tests.pdb
+D:\Development\Projets\Projets Sources\Zoly Framework\UNIT TESTS\ZolyFramework.UI.Tests\bin\Debug\ZolyFramework.UI.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\UNIT TESTS\ZolyFramework.UI.Tests\bin\Debug\ZolyFramework.Core.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\UNIT TESTS\ZolyFramework.UI.Tests\bin\Debug\ZolyFramework.UI.pdb
+D:\Development\Projets\Projets Sources\Zoly Framework\UNIT TESTS\ZolyFramework.UI.Tests\bin\Debug\ZolyFramework.Core.pdb
+D:\Development\Projets\Projets Sources\Zoly Framework\UNIT TESTS\ZolyFramework.UI.Tests\obj\Debug\ZolyFramework.UI.Tests.csprojResolveAssemblyReference.cache
+D:\Development\Projets\Projets Sources\Zoly Framework\UNIT TESTS\ZolyFramework.UI.Tests\obj\Debug\ZolyFramework.UI.Tests.dll
+D:\Development\Projets\Projets Sources\Zoly Framework\UNIT TESTS\ZolyFramework.UI.Tests\obj\Debug\ZolyFramework.UI.Tests.pdb
