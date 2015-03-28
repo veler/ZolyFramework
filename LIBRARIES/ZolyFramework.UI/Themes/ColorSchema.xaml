@@ -1,0 +1,200 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!-- ZolyWindow -->
+    <SolidColorBrush x:Key="ZolyWindowBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyWindowBackgroundBrush" Color="{Binding Color, Source={StaticResource BackgroundBrush}}"/>
+    <Color x:Key="ZolyWindowDropShadowBrush">#000000</Color>
+
+
+    <!-- ZolyScrollBar -->
+    <SolidColorBrush x:Key="ZolyScrollBarBackgroundBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyScrollBarBorderBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyScrollBarThumbBrush" Color="{Binding Color, Source={StaticResource VeryLighterThemeBrush}}"/>
+
+
+    <!-- ZolyRaisedButton -->
+    <SolidColorBrush x:Key="ZolyRaisedButtonEnabledBackgroundBrush" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonEnabledBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyRaisedButtonFocusedBackgroundBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonFocusedBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonFocusedTextBrush" Color="{Binding Color, Source={StaticResource TextHoverBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyRaisedButtonHoverBackgroundBrush" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonHoverBorderBrush" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonHoverTextBrush" Color="{Binding Color, Source={StaticResource TextHoverBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyRaisedButtonPressedBackgroundBrush" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonPressedBorderBrush" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonPressedTextBrush" Color="{Binding Color, Source={StaticResource TextPressedBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyRaisedButtonDisabledBackgroundBrush" Color="{Binding Color, Source={StaticResource DisabledBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonDisabledBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRaisedButtonDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+
+    <!-- ZolyFlatButton -->
+    <SolidColorBrush x:Key="ZolyFlatButtonEnabledBackgroundBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonEnabledBorderBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyFlatButtonFocusedBackgroundBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonFocusedBorderBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonFocusedTextBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyFlatButtonHoverBackgroundBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonHoverBorderBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonHoverTextBrush" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyFlatButtonPressedBackgroundBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonPressedBorderBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonPressedTextBrush" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyFlatButtonDisabledBackgroundBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonDisabledBorderBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ZolyFlatButtonDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+
+    <!-- ZolyRadioButton -->
+    <SolidColorBrush x:Key="ZolyRadioButtonEnabledBackground" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonEnabledBorder" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonEnabledGlyph" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyRadioButtonMouseOverBackground" Color="{Binding Color, Source={StaticResource VeryLighterThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonMouseOverBorder" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonMouseOverGlyph" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyRadioButtonDisabledBackground" Color="{Binding Color, Source={StaticResource DisabledBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonDisabledBorder" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonDisabledGlyph" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyRadioButtonPressedBackground" Color="{Binding Color, Source={StaticResource LighterThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonPressedBorder" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+    <SolidColorBrush x:Key="ZolyRadioButtonPressedGlyph" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+
+
+    <!-- ZolyCheckBox -->
+    <SolidColorBrush x:Key="ZolyCheckBoxEnabledBackground" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxEnabledBorder" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxEnabledGlyph" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyCheckBoxMouseOverBackground" Color="{Binding Color, Source={StaticResource VeryLighterThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxMouseOverBorder" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxMouseOverGlyph" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyCheckBoxDisabledBackground" Color="{Binding Color, Source={StaticResource DisabledBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxDisabledBorder" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxDisabledGlyph" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyCheckBoxPressedBackground" Color="{Binding Color, Source={StaticResource LighterThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxPressedBorder" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+    <SolidColorBrush x:Key="ZolyCheckBoxPressedGlyph" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+
+
+    <!-- ZolyTextBox -->
+    <SolidColorBrush x:Key="ZolyTextBoxEnabledBackgroundBrush" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyTextBoxEnabledBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyTextBoxEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyTextBoxOverBorderBrush" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyTextBoxFocusedBorderBrush" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyTextBoxDisabledBorderBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+    <SolidColorBrush x:Key="ZolyTextBoxDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+
+    <!-- ZolyDatePicker -->
+    <SolidColorBrush x:Key="ZolyDatePickerEnabledBackground" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyDatePickerEnabledBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyDatePickerEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyDatePickerDisabledBorderBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+    <SolidColorBrush x:Key="ZolyDatePickerDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+
+    <!-- ZolyComboBox -->
+    <SolidColorBrush x:Key="ZolyComboBoxEnabledBackgroundBrush" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyComboBoxEnabledBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyComboBoxEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyComboBoxDisabledBorderBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+    <SolidColorBrush x:Key="ZolyComboBoxDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+
+    <!-- ZolyProgressBar -->
+    <SolidColorBrush x:Key="ZolyProgressBarBackgroundBrush" Color="{Binding Color, Source={StaticResource DisabledBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyProgressBarBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyProgressBarProgressBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+
+
+    <!-- ZolyListBox -->
+    <SolidColorBrush x:Key="ZolyListBoxEnabledBackgroundBrush" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListBoxEnabledBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListBoxEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListBoxEnabledHighlightBrush" Color="{Binding Color, Source={StaticResource DisabledBackgroundBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyListBoxDisabledBorderBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListBoxDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+
+    <!-- ZolyListView & ZolyHorizontalListView -->
+    <SolidColorBrush x:Key="ZolyListViewEnabledBackgroundBrush" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListViewEnabledBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListViewEnabledTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListViewEnabledHighlightBrush" Color="{Binding Color, Source={StaticResource DisabledBackgroundBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyListViewItemHoverBackground" Color="{Binding Color, Source={StaticResource VeryLighterThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListViewItemHoverTextBrush" Color="{Binding Color, Source={StaticResource TextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyListViewItemSelectedBackground" Color="{Binding Color, Source={StaticResource LighterThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListViewItemSelectedTextBrush" Color="{Binding Color, Source={StaticResource TextPressedBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyListViewDisabledBorderBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListViewDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyListViewColumnOverBackgroundBrush" Color="{Binding Color, Source={StaticResource HoverBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListViewColumnOverTextBrush" Color="{Binding Color, Source={StaticResource TextHoverBrush}}"/>
+
+    <SolidColorBrush x:Key="ZolyListViewColumnPressedBackgroundBrush" Color="{Binding Color, Source={StaticResource PressedBrush}}"/>
+    <SolidColorBrush x:Key="ZolyListViewColumnPressedTextBrush" Color="{Binding Color, Source={StaticResource TextPressedBrush}}"/>
+
+
+    <!-- ZolyAppBar -->
+    <SolidColorBrush x:Key="ZolyAppBarClosedBackgroundBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyAppBarOpenedBackgroundBrush" Color="{Binding Color, Source={StaticResource DarkerThemeBrush}}"/>
+
+
+    <!-- ZolyContextMenu -->
+    <SolidColorBrush x:Key="ZolyContextMenuBackgroundBrush" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyContextMenuBorderBrush" Color="#2a2a2a"/>
+
+
+    <!-- ZolyMenuItem -->
+    <SolidColorBrush x:Key="ZolyMenuItemEnabledTextBrush" Color="#2a2a2a"/>
+    <SolidColorBrush x:Key="ZolyMenuItemDisabledTextBrush" Color="{Binding Color, Source={StaticResource DisabledTextBrush}}"/>
+    <SolidColorBrush x:Key="ZolyMenuItemBackgroundBrush" Color="{Binding Color, Source={StaticResource LighterBackgroundBrush}}"/>
+    <SolidColorBrush x:Key="ZolyMenuItemOverBackgroundBrush" Color="#DEDEDE"/>
+    <SolidColorBrush x:Key="ZolyMenuItemPressedBackgroundBrush" Color="#D3D3D3"/>
+
+
+    <!-- ZolyMessageDialog -->
+    <SolidColorBrush x:Key="ZolyMessageDialogBackgroundBrush" Color="{Binding Color, Source={StaticResource BackgroundBrush}}"/>
+
+
+    <!-- ZolyFlyout -->
+    <SolidColorBrush x:Key="ZolyFlyoutBackgroundBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyFlyoutBorderBrush" Color="{Binding Color, Source={StaticResource ThemeBrush}}"/>
+    <SolidColorBrush x:Key="ZolyFlyoutForegroundBrush" Color="{Binding Color, Source={StaticResource TextHoverBrush}}"/>
+
+</ResourceDictionary>

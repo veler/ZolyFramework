@@ -1,0 +1,135 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:windows="clr-namespace:ZolyFramework.UI.Windows" 
+    xmlns:converters="clr-namespace:ZolyFramework.UI.Converters" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!-- Converters -->
+    <converters:ResizeModeToVisibilityConverter x:Key="ResizeModeToVisibilityConverter"/>
+    <converters:ResizeModeToVisibilityConverter x:Key="ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb" CanMinimize="Collapsed"/>
+    <converters:WindowStateToVisibilityConverter x:Key="WindowStateToVisibilityConverterMaximize" Maximized="Collapsed" Normal="Visible"/>
+    <converters:WindowStateToVisibilityConverter x:Key="WindowStateToVisibilityConverterRestore" Maximized="Visible" Normal="Collapsed"/>
+    <converters:WindowStateToThicknessConverter x:Key="WindowStateToThicknessConverterForZolyWindowBorder" Maximized="-9" Normal="10" Minimized="10"/>
+    <converters:BooleanToThicknessConverter x:Key="BooleanToThicknessConverter"/>
+
+
+    <!-- ZolyWindow -->
+    <Style x:Key="ZolyWindowChromeButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="FontFamily" Value="Marlett"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Height" Value="26"/>
+        <Setter Property="Width" Value="34"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="BorderBrush" Value="{x:Null}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderThickness="0" Background="{TemplateBinding Background}">
+                        <ContentControl Content="{TemplateBinding Content}" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" HorizontalAlignment="Center" VerticalAlignment="Center" TextOptions.TextFormattingMode="Display" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource HoverBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource TextHoverBrush}"/>
+                        </Trigger>
+                        <Trigger Property="AreAnyTouchesOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource HoverBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource TextHoverBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource PressedBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource TextPressedBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type windows:ZolyWindow}">
+        <Setter Property="Title" Value="ZolyWindow"/>
+        <Setter Property="WindowStyle" Value="None"/>
+        <Setter Property="AllowsTransparency" Value="True"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="ResizeMode" Value="CanResizeWithGrip"/>
+        <Setter Property="MinHeight" Value="100"/>
+        <Setter Property="MinWidth" Value="100"/>
+        <Setter Property="UseLayoutRounding" Value="True"/>
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect BlurRadius="8" ShadowDepth="0" Opacity="0.4" RenderingBias="Performance" Color="{DynamicResource ZolyWindowDropShadowBrush}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type windows:ZolyWindow}">
+                    <Grid Background="Transparent" Margin="{Binding WindowState, Converter={StaticResource WindowStateToThicknessConverterForZolyWindowBorder}, RelativeSource={RelativeSource TemplatedParent}}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="8" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="8" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="8" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="8" />
+                        </Grid.RowDefinitions>
+                        <!-- Resize anchors -->
+                        <Thumb x:Name="Thumb1" Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb}, RelativeSource={RelativeSource TemplatedParent}}" Opacity="0" Grid.Row="0" Grid.Column="0" Cursor="SizeNWSE" Tag="TL"/>
+                        <Thumb x:Name="Thumb2" Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb}, RelativeSource={RelativeSource TemplatedParent}}" Opacity="0" Grid.Row="0" Grid.Column="2" Cursor="SizeNESW" Tag="TR"/>
+                        <Thumb x:Name="Thumb3" Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb}, RelativeSource={RelativeSource TemplatedParent}}" Opacity="0" Grid.Row="3" Grid.Column="0" Cursor="SizeNESW" Tag="BL"/>
+                        <Thumb x:Name="Thumb4" Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb}, RelativeSource={RelativeSource TemplatedParent}}" Opacity="0" Grid.Row="3" Grid.Column="2" Cursor="SizeNWSE" Tag="BR"/>
+                        <Thumb x:Name="Thumb5" Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb}, RelativeSource={RelativeSource TemplatedParent}}" Opacity="0" Grid.Row="0" Grid.Column="1" Cursor="SizeNS" Tag="T"/>
+                        <Thumb x:Name="Thumb6" Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb}, RelativeSource={RelativeSource TemplatedParent}}" Opacity="0" Grid.Row="3" Grid.Column="1" Cursor="SizeNS" Tag="B"/>
+                        <Thumb x:Name="Thumb7" Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb}, RelativeSource={RelativeSource TemplatedParent}}" Opacity="0" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Cursor="SizeWE" Tag="L"/>
+                        <Thumb x:Name="Thumb8" Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb}, RelativeSource={RelativeSource TemplatedParent}}" Opacity="0" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" Cursor="SizeWE" Tag="R"/>
+
+                        <!-- Window content -->
+                        <Border Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" 
+                            BorderThickness="{Binding ShowBorder, Converter={StaticResource BooleanToThicknessConverter}, RelativeSource={RelativeSource TemplatedParent}}" 
+                            BorderBrush="{DynamicResource ZolyWindowBorderBrush}">
+                            <Grid Background="{DynamicResource ZolyWindowBackgroundBrush}">
+                                <Grid x:Name="DragZoneGrid" VerticalAlignment="Top" Height="{Binding CloseButton.ActualHeight, RelativeSource={RelativeSource TemplatedParent}}" />
+                                <Grid Margin="0">
+                                    <ContentPresenter
+                        			ContentTemplate="{TemplateBinding ContentTemplate}"
+                        			Content="{TemplateBinding Content}"
+                        			ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                        			Margin="0"
+                        			RecognizesAccessKey="True"
+                        			SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                </Grid>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" FlowDirection="RightToLeft">
+                                    <!-- Close button -->
+                                    <Button x:Name="CloseButton" Style="{StaticResource ZolyWindowChromeButtonStyle}" Content="r" ToolTip="Close"/>
+                                    <Grid Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverterForRestoreButtonGroupAndThumb}, RelativeSource={RelativeSource TemplatedParent}}">
+                                        <!-- Restore button -->
+                                        <Button x:Name="RestoreButton" Style="{StaticResource ZolyWindowChromeButtonStyle}" Content="2" ToolTip="Restore Down"
+                                            Visibility="{Binding WindowState, Converter={StaticResource WindowStateToVisibilityConverterRestore}, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                        <!-- Maximize button -->
+                                        <Button x:Name="MaximizeButton" Style="{StaticResource ZolyWindowChromeButtonStyle}" Content="1" ToolTip="Maximize"
+                                            Visibility="{Binding WindowState, Converter={StaticResource WindowStateToVisibilityConverterMaximize}, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                    </Grid>
+                                    <!-- Minimize button -->
+                                    <Button x:Name="MinimizeButton" Style="{StaticResource ZolyWindowChromeButtonStyle}" Content="0" ToolTip="Minimize"
+                                        Visibility="{Binding ResizeMode, Converter={StaticResource ResizeModeToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

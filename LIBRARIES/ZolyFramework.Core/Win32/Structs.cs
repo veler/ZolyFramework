@@ -1,17 +1,33 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Structs.cs" company="Etienne BAUDOUX">
+//   
+// </copyright>
+// <summary>
+//   Defines the LASTINPUTINFO type.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace ZolyFramework.Core.Win32
 {
+    using System;
+    using System.Runtime.InteropServices;
+
     [StructLayout(LayoutKind.Sequential)]
-    internal struct Win32Point
+    public struct LASTINPUTINFO
+    {
+        public uint cbSize;
+        public uint dwTime;
+    }
+
+    [StructLayout(LayoutKind.Sequential)]
+    public struct Win32Point
     {
         public Int32 X;
         public Int32 Y;
-    };
+    }
 
     [StructLayout(LayoutKind.Sequential)]
-    internal struct POINT
+    public struct POINT
     {
         public int x;
         public int y;
@@ -24,17 +40,17 @@ namespace ZolyFramework.Core.Win32
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    internal struct MINMAXINFO
+    public struct MINMAXINFO
     {
         public POINT ptReserved;
         public POINT ptMaxSize;
         public POINT ptMaxPosition;
         public POINT ptMinTrackSize;
         public POINT ptMaxTrackSize;
-    };
+    }
 
     [StructLayout(LayoutKind.Sequential, Pack = 0)]
-    internal struct RECT
+    public struct RECT
     {
         public int left;
         public int top;
@@ -96,5 +112,14 @@ namespace ZolyFramework.Core.Win32
         {
             return !(rect1 == rect2);
         }
+    }
+
+    [StructLayout(LayoutKind.Sequential)]
+    public struct Margins
+    {
+        public int Left;
+        public int Right;
+        public int Top;
+        public int Bottom;
     }
 }

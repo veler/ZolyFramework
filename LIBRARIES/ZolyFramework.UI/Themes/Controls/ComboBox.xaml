@@ -1,0 +1,125 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:ZolyFramework.UI.Windows.Controls"
+    mc:Ignorable="d">
+
+
+    <!-- ZolyComboBox -->
+    <Geometry x:Key="DownArrowGeometry">M 0 0 L 3.5 4 L 7 0 Z</Geometry>
+    <Style x:Key="ComboBoxReadonlyToggleButton" TargetType="{x:Type ToggleButton}">
+        <Setter Property="OverridesDefaultStyle" Value="true"/>
+        <Setter Property="IsTabStop" Value="false"/>
+        <Setter Property="Focusable" Value="false"/>
+        <Setter Property="ClickMode" Value="Press"/>
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Border x:Name="Chrome" SnapsToDevicePixels="true" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" Background="{TemplateBinding Background}">
+                        <Grid>
+                            <TextBlock x:Name="PlaceHolderTextBlock" Text="{TemplateBinding Content}" Visibility="{TemplateBinding Tag}" VerticalAlignment="Center" Padding="2,0,0,0"/>
+                            <Grid HorizontalAlignment="Right" Width="20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="3"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Path Grid.Column="1" Fill="{TemplateBinding Foreground}" HorizontalAlignment="Center" Margin="3,1,0,0" x:Name="Arrow" VerticalAlignment="Center" Data="{DynamicResource DownArrowGeometry}"/>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type controls:ZolyComboBox}">
+        <Setter Property="Background" Value="{DynamicResource ZolyComboBoxEnabledBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ZolyComboBoxEnabledBorderBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource ZolyComboBoxEnabledTextBrush}" />
+        <Setter Property="PlaceHolderForeground" Value="{DynamicResource ZolyComboBoxDisabledTextBrush}"/>
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Height" Value="36"/>
+        <Setter Property="Width" Value="Auto"/>
+        <Setter Property="ItemContainerStyle">
+            <Setter.Value>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ItemsControl}}}"/>
+                    <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ItemsControl}}}"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="FontWeight" Value="Medium"/>
+                    <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
+                    <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+                    <Setter Property="Padding" Value="4,3"/>
+                    <Setter Property="Background" Value="{DynamicResource ZolyMenuItemBackgroundBrush}" />
+                    <Setter Property="Foreground" Value="{DynamicResource ZolyMenuItemEnabledTextBrush}" />
+                    <Setter Property="BorderBrush" Value="{DynamicResource ZolyComboBoxEnabledBorderBrush}" />
+                    <Setter Property="BorderThickness" Value="0" />
+                    <Setter Property="Height" Value="36"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                                <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                    <ContentPresenter VerticalAlignment="Center" Margin="{TemplateBinding Padding}" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="{DynamicResource ZolyMenuItemPressedBackgroundBrush}"/>
+                                    </Trigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="{DynamicResource ZolyMenuItemOverBackgroundBrush}"/>
+                                    </Trigger>
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Foreground" Value="{DynamicResource ZolyMenuItemDisabledTextBrush}"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:ZolyComboBox}">
+                    <Grid x:Name="MainGrid" SnapsToDevicePixels="true">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Width="0"/>
+                        </Grid.ColumnDefinitions>
+                        <Popup Margin="1" x:Name="PART_Popup" AllowsTransparency="true" IsOpen="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Bottom" PopupAnimation="Slide" Grid.ColumnSpan="2">
+                            <Border x:Name="DropDownBorder" Background="{TemplateBinding Background}" MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{Binding ActualWidth, ElementName=MainGrid}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1">
+                                <controls:ZolyScrollViewer CanContentScroll="true">
+                                    <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" KeyboardNavigation.DirectionalNavigation="Contained"/>
+                                </controls:ZolyScrollViewer>
+                            </Border>
+                        </Popup>
+                        <ToggleButton x:Name="PlaceHolderToggleButton" Style="{DynamicResource ComboBoxReadonlyToggleButton}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Foreground="{TemplateBinding PlaceHolderForeground}" Grid.ColumnSpan="2"
+                        		Grid.Column="0"
+                        		IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" Content="{Binding PlaceHolder, RelativeSource={RelativeSource TemplatedParent}}"/>
+                        <ContentPresenter Grid.Column="0"
+                        		HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="4,3" IsHitTestVisible="false" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasItems" Value="false">
+                            <Setter Property="Height" TargetName="DropDownBorder" Value="95"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{DynamicResource ZolyComboBoxDisabledTextBrush}"/>
+                            <Setter Property="BorderBrush" Value="{DynamicResource ZolyComboBoxDisabledBorderBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsGrouping" Value="true">
+                            <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

@@ -1,11 +1,23 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using System.Windows;
-using System.Windows.Interop;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Wm.cs" company="Etienne BAUDOUX">
+//   
+// </copyright>
+// <summary>
+//   The Windows Message class.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace ZolyFramework.Core.Win32
 {
-    public class Wm
+    using System;
+    using System.Runtime.InteropServices;
+    using System.Windows;
+    using System.Windows.Interop;
+
+    /// <summary>
+    /// The Windows Message class.
+    /// </summary>
+    public static class Wm
     {
         public static IntPtr WindowProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
@@ -42,6 +54,12 @@ namespace ZolyFramework.Core.Win32
             Marshal.StructureToPtr(mmi, lParam, true);
         }
 
+        /// <summary>
+        /// The get mouse position.
+        /// </summary>
+        /// <returns>
+        /// The <see cref="Point"/>.
+        /// </returns>
         public static Point GetMousePosition()
         {
             var w32Mouse = new Win32Point();
@@ -49,6 +67,12 @@ namespace ZolyFramework.Core.Win32
             return new Point(w32Mouse.X, w32Mouse.Y);
         }
 
+        /// <summary>
+        /// Show window system menu (Close, Move, Restore, Minimize, Maximize...).
+        /// </summary>
+        /// <param name="window">
+        /// The window.
+        /// </param>
         public static void ShowWindowSystemMenu(Window window)
         {
             var helper = new WindowInteropHelper(window);

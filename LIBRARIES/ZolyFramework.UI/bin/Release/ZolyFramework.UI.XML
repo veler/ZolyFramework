@@ -1,0 +1,2972 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZolyFramework.UI</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior" -->
+        <member name="F:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.InputMaskProperty">
+            <summary>
+            The input mask property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.PromptCharProperty">
+            <summary>
+            The prompt char property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.OnAttached">
+            <summary>
+            On attached.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.OnDetaching">
+            <summary>
+            On detaching.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.AssociatedObjectLoaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The associated object loaded.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.AssociatedObjectPreviewTextInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
+            <summary>
+            The associated object preview text input.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.AssociatedObjectPreviewKeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            The associated object preview key down.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.Pasting(System.Object,System.Windows.DataObjectPastingEventArgs)">
+            <summary>
+            When pasting a text
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.UpdateText">
+            <summary>
+            Update text.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.RefreshText(System.Int32)">
+            <summary>
+            Refresh text.
+            </summary>
+            <param name="position">
+            The position.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.SetText(System.String)">
+            <summary>
+            Set the text of the textBox.
+            </summary>
+            <param name="text">
+            The text.
+            </param>
+        </member>
+        <member name="P:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.InputMask">
+            <summary>
+            Gets or sets the input mask.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.PromptChar">
+            <summary>
+            Gets or sets the prompt char.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Behaviors.TextBoxInputMask.TextBoxInputMaskBehavior.Provider">
+            <summary>
+            Gets the masked text provider.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.ComponentModel.FlyoutManager">
+            <summary>
+            Manager the only one fly out displayed on screen
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.ComponentModel.FlyoutManager._currentFlyout">
+            <summary>
+            The current fly out.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.ComponentModel.FlyoutManager.SetCurrentFlyout(ZolyFramework.UI.Windows.Controls.ZolyFlyout)">
+            <summary>
+            Set the current fly out.
+            </summary>
+            <param name="flyout">
+            The fly out.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.ComponentModel.FlyoutManager.GetCurrentFlyout">
+            <summary>
+            Get the current fly out.
+            </summary>
+            <returns>
+            The <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyFlyout"/>.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.UI.ComponentModel.FlyoutManager.IsAnyFlyoutOpened">
+            <summary>
+            Check if any fly out is already opened.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:ZolyFramework.UI.ComponentModel.MessageDialogManager">
+            <summary>
+            Manager the only one message dialog displayed on screen
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.ComponentModel.MessageDialogManager._currentMessageDialog">
+            <summary>
+            The current message dialog.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.ComponentModel.MessageDialogManager.SetCurrentMessageDialog(ZolyFramework.UI.Windows.Controls.ZolyMessageDialog)">
+            <summary>
+            Set the current message dialog.
+            </summary>
+            <param name="messageDialog">
+            The message dialog.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.ComponentModel.MessageDialogManager.GetCurrentMessageDialog">
+            <summary>
+            Get the current message dialog.
+            </summary>
+            <returns>
+            The <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog"/>.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.UI.ComponentModel.MessageDialogManager.IsAnyMessageDialogOpened">
+            <summary>
+            Check if any message dialog is already opened.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="T:ZolyFramework.UI.ComponentModel.NotifyPropertyChangedClass">
+            <summary>
+            Provide an event and methods usable in your properties.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.ComponentModel.NotifyPropertyChangedClass.OnPropertyChanged(System.String)">
+            <summary>
+            On property changed. Raise the PropertyChanged event.
+            </summary>
+            <param name="propertyName">
+            The property name.
+            </param>
+        </member>
+        <member name="E:ZolyFramework.UI.ComponentModel.NotifyPropertyChangedClass.PropertyChanged">
+            <summary>
+            The property changed event.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Converters.WidthToPaneMarginConverter">
+            <summary>
+            The width to pane margin converter.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.WidthToPaneMarginConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            Double value needed
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.WidthToPaneMarginConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            (Not supported) The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Not supported
+            </exception>
+        </member>
+        <member name="T:ZolyFramework.UI.Converters.BooleanToStyleConverter">
+            <summary>
+            The boolean to style converter.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.BooleanToStyleConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Converters.BooleanToStyleConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.BooleanToStyleConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            Boolean value needed
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.BooleanToStyleConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.Data.NoNullAllowedException">
+            Style value needed for True property
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            Style value needed
+            </exception>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.BooleanToStyleConverter.True">
+            <summary>
+            Gets or sets the style to return when the value is True.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.BooleanToStyleConverter.False">
+            <summary>
+            Gets or sets the style to return when the value is False.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Converters.IntegerToBooleanConverter">
+            <summary>
+            The integer to boolean converter.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.IntegerToBooleanConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Converters.IntegerToBooleanConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.IntegerToBooleanConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            Integer value needed
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.IntegerToBooleanConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            (Not supported) The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Not supported
+            </exception>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.IntegerToBooleanConverter.ResultValue">
+            <summary>
+            Gets or sets a value indicating whether result value is True or False when the Value property is equal to the binded value.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.IntegerToBooleanConverter.Value">
+            <summary>
+            Gets or sets the value used to check if the binded value if correct or not.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Converters.BooleanToVerticalAlignmentConverter">
+            <summary>
+            The boolean to vertical alignment converter.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.BooleanToVerticalAlignmentConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Converters.BooleanToVerticalAlignmentConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.BooleanToVerticalAlignmentConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            Boolean value needed
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.BooleanToVerticalAlignmentConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            VerticalAlignment value needed
+            </exception>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.BooleanToVerticalAlignmentConverter.True">
+            <summary>
+            Gets or sets the VerticalAlignment to return when the value is True.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.BooleanToVerticalAlignmentConverter.False">
+            <summary>
+            Gets or sets the VerticalAlignment to return when the value is False.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Converters.BooleanToThicknessConverter">
+            <summary>
+            The boolean to thickness converter.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.BooleanToThicknessConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Converters.BooleanToThicknessConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.BooleanToThicknessConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            Boolean value needed
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.BooleanToThicknessConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.Data.NoNullAllowedException">
+            Thickness value needed for True property
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            Thickness value needed
+            </exception>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.BooleanToThicknessConverter.True">
+            <summary>
+            Gets or sets the thickness to return when the value is True.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.BooleanToThicknessConverter.False">
+            <summary>
+            Gets or sets the thickness to return when the value is False.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Converters.WindowStateToThicknessConverter">
+            <summary>
+            The window state to thickness converter.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.WindowStateToThicknessConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Converters.WindowStateToThicknessConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.WindowStateToThicknessConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            WindowState value needed
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.WindowStateToThicknessConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            (Not supported) The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Not supported
+            </exception>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.WindowStateToThicknessConverter.Maximized">
+            <summary>
+            Gets or sets the thickness to return when the WindowsState is on Maximized.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.WindowStateToThicknessConverter.Minimized">
+            <summary>
+            Gets or sets the thickness to return when the WindowsState is on Minimized.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.WindowStateToThicknessConverter.Normal">
+            <summary>
+            Gets or sets the thickness to return when the WindowsState is on Normal.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Converters.WindowStateToVisibilityConverter">
+            <summary>
+            The window state to visibility converter.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.WindowStateToVisibilityConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Converters.WindowStateToVisibilityConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.WindowStateToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            WindowState value needed
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.WindowStateToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            (Not supported) The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Not supported
+            </exception>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.WindowStateToVisibilityConverter.Maximized">
+            <summary>
+            Gets or sets the visibility to return when the WindowsState is on Maximized.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.WindowStateToVisibilityConverter.Minimized">
+            <summary>
+            Gets or sets the visibility to return when the WindowsState is on Minimized.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.WindowStateToVisibilityConverter.Normal">
+            <summary>
+            Gets or sets the visibility to return when the WindowsState is on Normal.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Converters.ResizeModeToVisibilityConverter">
+            <summary>
+            The resize mode to visibility converter.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.ResizeModeToVisibilityConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Converters.ResizeModeToVisibilityConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.ResizeModeToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            The convert.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException">
+            ResizeMode value needed
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Converters.ResizeModeToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            (Not supported) The convert back.
+            </summary>
+            <param name="value">
+            The value.
+            </param>
+            <param name="targetType">
+            The target type.
+            </param>
+            <param name="parameter">
+            The parameter.
+            </param>
+            <param name="culture">
+            The culture.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+            <exception cref="T:System.NotSupportedException">
+            Not supported
+            </exception>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.ResizeModeToVisibilityConverter.CanMinimize">
+            <summary>
+            Gets or sets the Visibility to apply when the ResizeMode is on CanMinimize.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.ResizeModeToVisibilityConverter.NoResize">
+            <summary>
+            Gets or sets the Visibility to apply when the ResizeMode is on NoResize.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.ResizeModeToVisibilityConverter.CanResize">
+            <summary>
+            Gets or sets the Visibility to apply when the ResizeMode is on CanResize.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Converters.ResizeModeToVisibilityConverter.CanResizeWithGrip">
+            <summary>
+            Gets or sets the Visibility to apply when the ResizeMode is on CanResizeWithGrip.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect">
+            <summary>
+            Blur the background of a FrameworkElement.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect._attachedElement">
+            <summary>
+            The attached element.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect._translateTransform">
+            <summary>
+            The translate transform.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect._visualBrush">
+            <summary>
+            The visual brush.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect._blurEffect">
+            <summary>
+            The blur effect.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.RadiusProperty">
+            <summary>
+            The radius property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.MaskBrushProperty">
+            <summary>
+            The mask brush property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.VisualProperty">
+            <summary>
+            The visual property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.OnAttached">
+            <summary>
+            On attached.
+            </summary>
+            <exception cref="T:System.ArgumentException">
+            The container argument should be able to receive several children (like Grid, Panel, but not Border for example).
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.RadiusPropertyChangedCallback(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            The radius property changed callback.
+            </summary>
+            <param name="d">
+            The dependency object.
+            </param>
+            <param name="e">
+            The information on the property.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.BlurBackgroundEffectLoaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The blur background effect loaded.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.CompositionTargetRendering(System.Object,System.EventArgs)">
+            <summary>
+            The composition target rendering.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="P:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.Radius">
+            <summary>
+            Gets or sets the radius.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.MaskBrush">
+            <summary>
+            Gets or sets the mask brush.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Behaviors.BlurBackground.BlurBackgroundEffect.Visual">
+            <summary>
+            Gets or sets the visual.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Behaviors.Tilt.LayoutInvalidationCatcher">
+            <summary>
+            Wrap this around a class that we want to catch the measure and arrange 
+            processes occuring on, and propagate to the parent Planerator, if any.
+            Do this because layout invalidations don't flow up out of a 
+            Viewport2DVisual3D object.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Extensions.MenuItemExtensions">
+            <summary>
+            Extension for menu items.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Extensions.MenuItemExtensions.ElementToGroupNames">
+            <summary>
+            Contains the list of menu item and their group name.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Extensions.MenuItemExtensions.GroupNameProperty">
+            <summary>
+            Group name of a menu item
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.MenuItemExtensions.SetGroupName(System.Windows.Controls.MenuItem,System.String)">
+            <summary>
+            Set the group name of a menu item
+            </summary>
+            <param name="element">the menu item</param>
+            <param name="value">the group name</param>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.MenuItemExtensions.GetGroupName(System.Windows.Controls.MenuItem)">
+            <summary>
+            Returns the group name of a menu item
+            </summary>
+            <param name="element">the menu item</param>
+            <returns>the group name</returns>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.MenuItemExtensions.OnGroupNameChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            On group name changed.
+            </summary>
+            <param name="d">
+            The object.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.MenuItemExtensions.RemoveCheckboxFromGrouping(System.Windows.Controls.MenuItem)">
+            <summary>
+            Remove checkbox from grouping menu item.
+            </summary>
+            <param name="checkBox">
+            The menu item.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.MenuItemExtensions.MenuItemChecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The menu item checked.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The e.
+            </param>
+        </member>
+        <member name="T:ZolyFramework.UI.Extensions.TextBoxExtensions">
+            <summary>
+            Extension for text box
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Extensions.TextBoxExtensions.IsNumericProperty">
+            <summary>
+            Set or Get if a text box is numeric only or not
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.TextBoxExtensions.GetIsNumeric(System.Windows.DependencyObject)">
+            <summary>
+            Returns a value that define if the specified text box is numeric
+            </summary>
+            <param name="obj">the TextBox</param>
+            <returns>True if it is numeric</returns>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.TextBoxExtensions.SetIsNumeric(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Set if a text box is numeric
+            </summary>
+            <param name="obj">the text box</param>
+            <param name="value">True if it is numeric</param>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.TextBoxExtensions.OnIsNumericChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            On IsNumeric changed.
+            </summary>
+            <param name="d">
+            The text box.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.TextBoxExtensions.TextboxPreviewKeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            The textbox preview key down.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The e.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Extensions.TextBoxExtensions.TextboxPreviewTextInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
+            <summary>
+            The textbox preview text input.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The e.
+            </param>
+        </member>
+        <member name="T:ZolyFramework.UI.Helper.VisualTreeHelper">
+            <summary>
+            Provide some functions to help to fin a visual component
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Helper.VisualTreeHelper.FindVisualChild``1(System.Windows.DependencyObject)">
+            <summary>
+            Find the next visual child corresponding to the wanted type
+            </summary>
+            <param name="depObj">the container</param>
+            <typeparam name="T">the type of control that we are searching for</typeparam>
+            <returns>Null if no control is found. Else, the first finded control.</returns>
+        </member>
+        <member name="M:ZolyFramework.UI.Helper.VisualTreeHelper.FindVisualParent``1(System.Windows.DependencyObject)">
+            <summary>
+            Find the next visual parent corresponding to the wanted type
+            </summary>
+            <param name="depObj">the child</param>
+            <typeparam name="T">the type of control that we are searching for</typeparam>
+            <returns>Null if no control is found. Else, the first finded control.</returns>
+        </member>
+        <member name="T:ZolyFramework.UI.Layout.ResponsiveLayoutState">
+            <summary>
+            Responsive Layout State
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Layout.ResponsiveLayoutState.StoryboardProperty">
+            <summary>
+            Storyboard corresponding to the layout
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Layout.ResponsiveLayoutState.MaxWidthProperty">
+            <summary>
+            Max width of the layout state
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Layout.ResponsiveLayoutState.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Layout.ResponsiveLayoutState"/> class. 
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Layout.ResponsiveLayoutState.IsCorrect">
+            <summary>
+            Check if this responsive layout state is correct.
+            </summary>
+            <exception cref="T:System.Data.NoNullAllowedException">
+            Invalid ResponsiveLayoutState. You should give a value to Name and MaxWidth.
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Layout.ResponsiveLayoutState.Equals(System.Object)">
+            <summary>
+            Returns a value that determine if the current responsive layout sate is equal to another one.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ZolyFramework.UI.Layout.ResponsiveLayoutState.Storyboard">
+            <summary>
+            Gets or Sets the storyboard corresponding to the layout
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Layout.ResponsiveLayoutState.MaxWidth">
+            <summary>
+            Gets or Sets the max width of the layout state
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Layout.ResponsiveLayoutManager">
+            <summary>
+            Provide a manager for the responsive layout
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Layout.ResponsiveLayoutManager.UpdateLayout(System.Windows.SizeChangedEventArgs,System.Windows.Window)">
+            <summary>
+            Update the layout
+            </summary>
+            <param name="sizeChanged">Size changed event arguments</param>
+            <param name="window">the window</param>
+            <exception cref="T:System.ArgumentNullException">sizeChanged or window argument is null</exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Layout.ResponsiveLayoutManager.PlayStoryboard(System.Windows.Window,System.Windows.Media.Animation.Storyboard,System.Boolean)">
+            <summary>
+            Play storyboard.
+            </summary>
+            <param name="window">
+            The window.
+            </param>
+            <param name="storyboard">
+            The storyboard.
+            </param>
+            <param name="reverse">
+            The reverse.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            storyboard argument is null
+            </exception>
+        </member>
+        <member name="P:ZolyFramework.UI.Layout.ResponsiveLayoutManager.CurrentLayoutState">
+            <summary>
+            Gets the current layout state
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Layout.ResponsiveLayoutManager.ReverseTransitions">
+            <summary>
+            Gets or sets a value that define if we should play the storyboard in reverse when the layout is resized.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Themes.Theme">
+            <summary>
+            A Theme
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Themes.Theme.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Themes.Theme"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Themes.Theme.#ctor(System.String,System.Uri)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Themes.Theme"/> class.
+            </summary>
+            <param name="name">
+            The theme name.
+            </param>
+            <param name="uri">
+            The resource dictionary uri.
+            </param>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.Theme.Name">
+            <summary>
+            Gets or sets the name of the theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.Theme.PreviewColor">
+            <summary>
+            Gets or sets the preview color of the theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.Theme.Uri">
+            <summary>
+            Gets or sets the Uri to the ResourceDictionary that contains the theme definition.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.Theme.ResourceDictionary">
+            <summary>
+            Gets the resource dictionary.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Themes.ThemeManager">
+            <summary>
+            The theme manager.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Themes.ThemeManager.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:ZolyFramework.UI.Themes.ThemeManager"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Themes.ThemeManager.ApplyTheme(ZolyFramework.UI.Themes.Theme)">
+            <summary>
+            Apply the specified theme.
+            </summary>
+            <param name="theme">
+            The theme.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            theme argument is null
+            </exception>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.DefaultTheme">
+            <summary>
+            Gets the default theme (blue).
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.AmberTheme">
+            <summary>
+            Gets the amber theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.BlueGreyTheme">
+            <summary>
+            Gets the blue grey theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.BlueTheme">
+            <summary>
+            Gets the blue theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.BrownTheme">
+            <summary>
+            Gets the brown theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.CyanTheme">
+            <summary>
+            Gets the cyan theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.DeepOrangeTheme">
+            <summary>
+            Gets the deep orange theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.DeepPurpleTheme">
+            <summary>
+            Gets the deep purple theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.GreenTheme">
+            <summary>
+            Gets the green theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.GreyTheme">
+            <summary>
+            Gets the grey theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.IndigoTheme">
+            <summary>
+            Gets the indigo theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.LightBlueTheme">
+            <summary>
+            Gets the light blue theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.LightGreenTheme">
+            <summary>
+            Gets the light green theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.LimeTheme">
+            <summary>
+            Gets the lime theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.OrangeTheme">
+            <summary>
+            Gets the orange theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.PinkTheme">
+            <summary>
+            Gets the pink theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.PurpleTheme">
+            <summary>
+            Gets the purple theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.RedTheme">
+            <summary>
+            Gets the red theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.TealTheme">
+            <summary>
+            Gets the teal theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.YellowTheme">
+            <summary>
+            Gets the yellow theme.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.Generic">
+            <summary>
+            Gets or sets the generic resource dictionary that contains the controls styles.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Themes.ThemeManager.Themes">
+            <summary>
+            Gets the themes.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlipView.CanGoNextProperty">
+            <summary>
+            The can go next property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlipView.CanGoBackProperty">
+            <summary>
+            The can go back property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlipView.NextButtonIsVisibleProperty">
+            <summary>
+            The next button is visible property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlipView.BackButtonIsVisibleProperty">
+            <summary>
+            The back button is visible property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyFlipView"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.OnApplyTemplate">
+            <summary>
+            The on apply template.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.OnItemsSourceChanged(System.Collections.IEnumerable,System.Collections.IEnumerable)">
+            <summary>
+            The on items source changed.
+            </summary>
+            <param name="oldValue">
+            The old value.
+            </param>
+            <param name="newValue">
+            The new value.
+            </param>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlipView.NextCommand">
+            <summary>
+            The next command.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.NextCommandCanExecute(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)">
+            <summary>
+            The next command can execute.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.NextCommandExecuted(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            The next command executed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlipView.PreviousCommand">
+            <summary>
+            The previous command.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.PreviousCommandCanExecute(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)">
+            <summary>
+            The previous command can execute.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.PreviousCommandExecuted(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            The previous command executed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.ZolyFlipViewLoaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly flip view loaded.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.ZolyFlipViewSelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            The zoly flip view selection changed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.SlideStoryboardCompleted(System.Object,System.EventArgs)">
+            <summary>
+            The slide storyboard completed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.RefreshDisposition">
+            <summary>
+            The refresh disposition.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.Next">
+            <summary>
+            Go to the next item.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.Previous">
+            <summary>
+            Go to the previous item.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlipView.GetItem(System.Int32)">
+            <summary>
+            The get item at an index.
+            </summary>
+            <param name="index">
+            The index.
+            </param>
+            <returns>
+            The <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlipView.PreviousContent">
+            <summary>
+            Gets or sets the previous content.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlipView.CurrentContent">
+            <summary>
+            Gets or sets the current content.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlipView.NextContent">
+            <summary>
+            Gets or sets the next content.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlipView.ContentGrid">
+            <summary>
+            Gets or sets the content grid.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlipView.SlideStoryboard">
+            <summary>
+            Gets or sets the slide storyboard.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlipView.CanGoNext">
+            <summary>
+            Gets or sets a value indicating whether can go next.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlipView.CanGoBack">
+            <summary>
+            Gets or sets a value indicating whether can go back.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlipView.NextButtonIsVisible">
+            <summary>
+            Gets or sets a value indicating whether next button is visible.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlipView.BackButtonIsVisible">
+            <summary>
+            Gets or sets a value indicating whether back button is visible.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyFlyout">
+            <summary>
+            The zoly flyout.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlyout.OpenedEvent">
+            <summary>
+            The opened event.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlyout.ClosedEvent">
+            <summary>
+            The closed event.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlyout.ContainerProperty">
+            <summary>
+            The container property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlyout.#ctor(System.Windows.Controls.Panel,System.Object,ZolyFramework.UI.Windows.Controls.ZolyFlyoutContentPanel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyFlyout"/> class.
+            </summary>
+            <param name="container">
+            The container that will contains the flyout (usually a grid of a window).
+            </param>
+            <param name="dataContext">
+            The data context.
+            </param>
+            <param name="flyoutContent">
+            The flyout content.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            container or flyoutContent argument is null
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            The container argument should have a parent that can receive several children (like Grid, Panel, but not Border for example).
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlyout.OnApplyTemplate">
+            <summary>
+            The on apply template.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlyout.CloseZolyFlatButtonClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The close zoly flat button click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlyout.Close">
+            <summary>
+            Close the flyout.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlyout.RaiseOpenedEvent(System.Windows.DependencyObject)">
+            <summary>
+            The raise opened event.
+            </summary>
+            <param name="target">
+            The target.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlyout.RaiseClosedEvent(System.Windows.DependencyObject)">
+            <summary>
+            The raise closed event.
+            </summary>
+            <param name="target">
+            The target.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlyout.ShowFlyoutAsync">
+            <summary>
+            Display the flyout.
+            </summary>
+            <returns>
+            The <see cref="T:System.Threading.Tasks.Task"/>.
+            </returns>
+            <exception cref="T:System.UnauthorizedAccessException">
+            Another Flyout is already opened.
+            OR
+            Unable to open a Flyout when a ZolyMessageDialog is actually opened. Close the ZolyMessageDialog first, and then open the Flyout.
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlyout.Dispose">
+            <summary>
+            The dispose.
+            </summary>
+        </member>
+        <member name="E:ZolyFramework.UI.Windows.Controls.ZolyFlyout.Opened">
+            <summary>
+            The opened.
+            </summary>
+        </member>
+        <member name="E:ZolyFramework.UI.Windows.Controls.ZolyFlyout.Closed">
+            <summary>
+            The closed.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlyout.Container">
+            <summary>
+            Gets or sets the container that will contains the flyout (usually a grid of a window).
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlyout.ContainerGrid">
+            <summary>
+            Gets or sets the container grid.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlyout.CloseZolyFlatButton">
+            <summary>
+            Gets or sets the close button.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlyout.IsOpen">
+            <summary>
+            Gets a value indicating whether the flyout is open.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyFlyoutContentPanel">
+            <summary>
+            The zoly flyout content panel.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyFlyoutContentPanel.TitleProperty">
+            <summary>
+            The title property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlyoutContentPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyFlyoutContentPanel"/> class.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyFlyoutContentPanel.Title">
+            <summary>
+            Gets or sets the title of the flyout.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox">
+            <summary>
+            The zoly password box.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.PlaceHolderProperty">
+            <summary>
+            The place holder property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.PlaceHolderForegroundProperty">
+            <summary>
+            The place holder foreground property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.PasswordCharProperty">
+            <summary>
+            The password char property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.CanSeePasswordProperty">
+            <summary>
+            The can see password property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.TextProperty">
+            <summary>
+            The text property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.OnApplyTemplate">
+            <summary>
+            The on apply template.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.InsertText(System.String)">
+            <summary>
+            The insert text.
+            </summary>
+            <param name="text">
+            The text to insert.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.HandleCanExecute(System.Object,System.Windows.Input.CanExecuteRoutedEventArgs)">
+            <summary>
+            The handle can execute.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.OnPaste(System.Object,System.Windows.DataObjectPastingEventArgs)">
+            <summary>
+            The on paste.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.ViewPasswordZolyFlatButtonMouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            The view password zoly flat button mouse down.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.ViewPasswordZolyFlatButtonMouseUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            The view password zoly flat button mouse up.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.ZolyPasswordBoxLostKeyboardFocus(System.Object,System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>
+            The zoly password box lost keyboard focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.ZolyPasswordBoxGotKeyboardFocus(System.Object,System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>
+            The zoly password box got keyboard focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.ZolyPasswordBoxLostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly password box lost focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.ZolyPasswordBoxGotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly password box got focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.ZolyPasswordBoxTextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            The zoly password box text changed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.ZolyPasswordBoxPreviewTextInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
+            <summary>
+            The zoly password box preview text input.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.ZolyPasswordBoxPreviewKeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            The zoly password box preview key down.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.PlaceHolder">
+            <summary>
+            Gets or sets the water mark.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.PlaceHolderForeground">
+            <summary>
+            Gets or sets the place holder foreground.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.PasswordChar">
+            <summary>
+            Gets or sets the password char.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.CanSeePassword">
+            <summary>
+            Gets or sets a value indicating whether can see password thanks to a button.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyPasswordBox.Text">
+            <summary>
+            Sets the text.
+            </summary>
+            <exception cref="T:System.NotSupportedException">
+            Unable to set this property manually
+            </exception>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock">
+            <summary>
+            The zoly copyable text block.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.IsCopyableProperty">
+            <summary>
+            The is copyable property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.TextEmptyProperty">
+            <summary>
+            The text empty property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.TextProperty">
+            <summary>
+            The text property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.TextTrimmingProperty">
+            <summary>
+            The text trimming property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.TextWrappingProperty">
+            <summary>
+            The text wrapping property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.OnApplyTemplate">
+            <summary>
+            The on apply template.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.TextPropertyChangedCallback(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            The text property changed callback.
+            </summary>
+            <param name="d">
+            The text block.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.ZolyCopyableTextBlockSizeChanged(System.Object,System.Windows.SizeChangedEventArgs)">
+            <summary>
+            The zoly copyable text block size changed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.CopyZolyFlatButtonClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The copy zoly flat button click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.RaiseOnCopyEvent">
+            <summary>
+            The raise on copy event.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="E:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.OnCopy">
+            <summary>
+            The on copy event.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.IsCopyable">
+            <summary>
+            Gets or sets a value indicating if the text is copyable.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.TextEmpty">
+            <summary>
+            Gets or sets a value indicating whether text is empty.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.Text">
+            <summary>
+            Gets or sets the text to display.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.TextTrimming">
+            <summary>
+            Gets or sets the text trimming.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyCopyableTextBlock.TextWrapping">
+            <summary>
+            Gets or sets the text wrapping.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyProgressBar">
+            <summary>
+            The zoly progress bar.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyProgressBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyProgressBar"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyCheckBox">
+            <summary>
+            The zoly check box.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyCheckBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyCheckBox"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyDatePicker">
+            <summary>
+            The zoly date picker.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyDatePicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyDatePicker"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyRadioButton">
+            <summary>
+            The zoly radio button.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyRadioButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyRadioButton"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyScrollViewer">
+            <summary>
+            The zoly scroll viewer.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyScrollViewer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyScrollViewer"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyScrollBar">
+            <summary>
+            The zoly scroll bar.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyScrollBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyScrollBar"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyTextBlock">
+            <summary>
+            The zoly text block.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTextBlock.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyTextBlock"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar">
+            <summary>
+            The zoly top app bar.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.IsOpenProperty">
+            <summary>
+            The is open property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.OnApplyTemplate">
+            <summary>
+            The on apply template.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.IsOpenPropertyChangedCallback(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            The is open property changed callback.
+            </summary>
+            <param name="dependencyObject">
+            The zoly top app bar.
+            </param>
+            <param name="dependencyPropertyChangedEventArgs">
+            The dependency property changed event args.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.ZolyTopAppBarLostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly top app bar lost focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.OpenTextBlockMouseUp(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The open text block mouse up.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.ContainerBorderMouseUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            The container border mouse up.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.UpdateDesignView">
+            <summary>
+            The update design view.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.OpenTextBlock">
+            <summary>
+            Gets or sets the open text block.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.ContainerGrid">
+            <summary>
+            Gets or sets the container grid.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyTopAppBar.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether the app bar is open.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar">
+            <summary>
+            The zoly bottom app bar.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.IsOpenProperty">
+            <summary>
+            The is open property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.OnApplyTemplate">
+            <summary>
+            The on apply template.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.IsOpenPropertyChangedCallback(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            The is open property changed callback.
+            </summary>
+            <param name="dependencyObject">
+            The zoly bottom app bar.
+            </param>
+            <param name="dependencyPropertyChangedEventArgs">
+            The dependency property changed event args.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.ZolyBottomAppBarLostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly bottom app bar lost focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.OpenTextBlockMouseUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            The open text block mouse up.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.ContainerBorderMouseUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            The container border mouse up.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.UpdateDesignView">
+            <summary>
+            The update design view.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.OpenTextBlock">
+            <summary>
+            Gets or sets the open text block.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.ContainerGrid">
+            <summary>
+            Gets or sets the container grid.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyBottomAppBar.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether the app bar is open.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyMenuItem">
+            <summary>
+            The zoly menu item.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMenuItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyMenuItem"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyContextMenu">
+            <summary>
+            The zoly context menu.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyContextMenu.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyContextMenu"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyFlatButton">
+            <summary>
+            The zoly flat button.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyFlatButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyFlatButton"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton">
+            <summary>
+            The zoly app bar button.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton.IconProperty">
+            <summary>
+            The icon property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton.PlacementModeProperty">
+            <summary>
+            The placement mode property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton.ZolyAppBarButtonLoaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly app bar button loaded.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton.ZolyAppBarButtonClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly app bar button click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton.ContextMenuClosed(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The context menu closed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton.TryCloseAppBar">
+            <summary>
+            Try to close the app bar.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton.Icon">
+            <summary>
+            Gets or sets the icon of the button.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyAppBarButton.PlacementMode">
+            <summary>
+            Gets or sets the placement mode.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog">
+            <summary>
+            The zoly message dialog.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.OpenedEvent">
+            <summary>
+            The opened event.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.ClosedEvent">
+            <summary>
+            The closed event.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.ContainerProperty">
+            <summary>
+            The container property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.#ctor(System.Windows.Controls.Panel,System.Object,ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog"/> class.
+            </summary>
+            <param name="container">
+            The container that will contains the message dialog (usually a grid of a window).
+            </param>
+            <param name="dataContext">
+            The data context.
+            </param>
+            <param name="messageDialogContent">
+            The message dialog content.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            container or messageDialogContent argument is null
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            The container argument should have a parent that can receive several children (like Grid, Panel, but not Border for example).
+            </exception>
+            <exception cref="T:System.Data.NoNullAllowedException">
+            MessageDialog's Cancel button is not defined
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.CancelButtonClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The cancel button click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.OkButtonClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The ok button click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.CancelAndClose">
+            <summary>
+            Cancel and close the message dialog.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.RaiseOpenedEvent(System.Windows.DependencyObject)">
+            <summary>
+            The raise opened event.
+            </summary>
+            <param name="target">
+            The target.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.RaiseClosedEvent(System.Windows.DependencyObject)">
+            <summary>
+            The raise closed event.
+            </summary>
+            <param name="target">
+            The target.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.ShowMessageDialogAsync">
+            <summary>
+            Show the message dialog and return a MessageBoxResult.
+            </summary>
+            <returns>
+            The <see cref="T:System.Threading.Tasks.Task"/> that contains a MessageBoxResult.
+            </returns>
+            <exception cref="T:System.UnauthorizedAccessException">
+            Another MessageDialog is already opened.
+            </exception>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.GetResultValue">
+            <summary>
+            The get result value.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> corresponding to the result of the message (it can be anything, like what the user prompt for exemple).
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.Dispose">
+            <summary>
+            The dispose.
+            </summary>
+        </member>
+        <member name="E:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.Opened">
+            <summary>
+            The opened.
+            </summary>
+        </member>
+        <member name="E:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.Closed">
+            <summary>
+            The closed.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyMessageDialog.Container">
+            <summary>
+            Gets or sets the container that will contains the message dialog (usually a grid of a window).
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel">
+            <summary>
+            The zoly message dialog content panel.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel.ResultProperty">
+            <summary>
+            The result property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel.TitleProperty">
+            <summary>
+            The title property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel.ZolyMessageDialogContentPanelLoaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly message dialog content panel loaded.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel.GetOkButton">
+            <summary>
+            The get ok button.
+            </summary>
+            <returns>
+            The <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyFlatButton"/>.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel.GetCancelButton">
+            <summary>
+            The get cancel button.
+            </summary>
+            <returns>
+            The <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyFlatButton"/>.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel.GetResult">
+            <summary>
+            The get result.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> corresponding to the result of the message (it can be anything, like what the user prompt for exemple).
+            </returns>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel.Result">
+            <summary>
+            Gets or sets the result of the message dialog.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyMessageDialogContentPanel.Title">
+            <summary>
+            Gets or sets the title of the message dialog.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyListBox">
+            <summary>
+            The zoly list box.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyListBox.PreviewSelectionChangedEvent">
+            <summary>
+            The preview selection changed event.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyListBox.EditModeProperty">
+            <summary>
+            The edit mode property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyListBox.ItemEditControlTemplateProperty">
+            <summary>
+            The item edit control template property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyListBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyListBox"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyListBox.StopEditing(System.Windows.Controls.ListBoxItem,System.Boolean)">
+            <summary>
+            The stop editing the specified item.
+            </summary>
+            <param name="item">
+            The item to edit.
+            </param>
+            <param name="force">
+            Force to stop the editing mode, even if the control has focus.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyListBox.StopEditing(System.Boolean)">
+            <summary>
+            The stop editing the current item.
+            </summary>
+            <param name="force">
+            Force to stop the editing mode, even if the control has focus
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyListBox.StartEditing">
+            <summary>
+            Starts to edit the selected item.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyListBox.RaisePreviewSelectionChangedEvent(System.Windows.DependencyObject,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            The raise preview selection changed event.
+            </summary>
+            <param name="target">
+            The target.
+            </param>
+            <param name="args">
+            The args.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyListBox.RaiseEditingStartedEvent">
+            <summary>
+            The raise editing started event.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/> that indicate is the event has been handled.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyListBox.RaiseEditingStoppedEvent">
+            <summary>
+            The raise editing stopped event.
+            </summary>
+            <returns>
+            The <see cref="T:System.Boolean"/> that indicate is the event has been handled.
+            </returns>
+        </member>
+        <member name="E:ZolyFramework.UI.Windows.Controls.ZolyListBox.PreviewSelectionChanged">
+            <summary>
+            The preview selection changed.
+            </summary>
+        </member>
+        <member name="E:ZolyFramework.UI.Windows.Controls.ZolyListBox.EditingStarted">
+            <summary>
+            The editing started.
+            </summary>
+        </member>
+        <member name="E:ZolyFramework.UI.Windows.Controls.ZolyListBox.EditingStopped">
+            <summary>
+            The editing stopped.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyListBox.EditMode">
+            <summary>
+            Gets or sets the item edit mode.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyListBox.ItemEditControlTemplate">
+            <summary>
+            Gets or sets the item edit control template.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyListBox.ItemEditMode">
+            <summary>
+            The item edit mode.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyListBox.ItemStatus">
+            <summary>
+            The item status.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyListView">
+            <summary>
+            The zoly list view.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyListView.IsColumnsVisibleProperty">
+            <summary>
+            The is columns visible property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyListView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyListView"/> class.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyListView.IsColumnsVisible">
+            <summary>
+            Gets or sets a value indicating whether columns are visible.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyRaisedButton">
+            <summary>
+            The zoly raised button.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyRaisedButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyRaisedButton"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyHorizontalListView">
+            <summary>
+            The zoly horizontal list view.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyHorizontalListView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyHorizontalListView"/> class.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyComboBox">
+            <summary>
+            The zoly combo box.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyComboBox.PlaceHolderProperty">
+            <summary>
+            The place holder property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyComboBox.PlaceHolderForegroundProperty">
+            <summary>
+            The place holder foreground property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyComboBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyComboBox"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyComboBox.OnApplyTemplate">
+            <summary>
+            The on apply template.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyComboBox.ZolyComboBoxLostKeyboardFocus(System.Object,System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>
+            The zoly combo box lost keyboard focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyComboBox.ZolyComboBoxLostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly combo box lost focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyComboBox.ZolyComboBoxSelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            The zoly combo box selection changed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyComboBox.PlaceHolder">
+            <summary>
+            Gets or sets the water mark.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyComboBox.PlaceHolderForeground">
+            <summary>
+            Gets or sets the place holder foreground.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.Controls.ZolyTextBox">
+            <summary>
+            The zoly text box.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyTextBox.CanClearProperty">
+            <summary>
+            The can clear property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyTextBox.PlaceHolderProperty">
+            <summary>
+            The place holder property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.Controls.ZolyTextBox.PlaceHolderForegroundProperty">
+            <summary>
+            The place holder foreground property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTextBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.Controls.ZolyTextBox"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTextBox.OnApplyTemplate">
+            <summary>
+            The on apply template.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTextBox.ZolyTextBoxLostKeyboardFocus(System.Object,System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>
+            The zoly text box lost keyboard focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTextBox.ZolyTextBoxGotKeyboardFocus(System.Object,System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>
+            The zoly text box got keyboard focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTextBox.ZolyTextBoxLostFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly text box lost focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTextBox.ZolyTextBoxGotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The zoly text box got focus.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTextBox.ZolyTextBoxTextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            The zoly text box text changed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.Controls.ZolyTextBox.ClearClickableZoneMouseUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            The clear clickable zone mouse up.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyTextBox.CanClear">
+            <summary>
+            Gets or sets a value indicating whether can clear the text box.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyTextBox.PlaceHolder">
+            <summary>
+            Gets or sets the water mark.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.Controls.ZolyTextBox.PlaceHolderForeground">
+            <summary>
+            Gets or sets the place holder foreground.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.ZolyWindow">
+            <summary>
+            The zoly window.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.UI.Windows.ResponsiveWindow">
+            <summary>
+            The responsive window.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.ResponsiveWindow.ResponsiveLayoutProperty">
+            <summary>
+            The responsive layout property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ResponsiveWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.ResponsiveWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ResponsiveWindow.ResponsiveWindowSizeChanged(System.Object,System.Windows.SizeChangedEventArgs)">
+            <summary>
+            The responsive window size changed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.ResponsiveWindow.ResponsiveLayout">
+            <summary>
+            Gets or sets the responsive layout.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.ZolyWindow.ShowBorderProperty">
+            <summary>
+            The show border property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.ZolyWindow.DraggableZoneGridProperty">
+            <summary>
+            The draggable zone grid property.
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.UI.Windows.ZolyWindow.CloseButtonProperty">
+            <summary>
+            The close button property.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ZolyFramework.UI.Windows.ZolyWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.OnApplyTemplate">
+            <summary>
+            The on apply template.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.ZolyWindowSourceInitialized(System.Object,System.EventArgs)">
+            <summary>
+            The zoly window source initialized.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.ZolyWindowClosing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            The zoly window closing.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.ZolyWindowClosed(System.Object,System.EventArgs)">
+            <summary>
+            The zoly window closed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.TimerElapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            The timer elapsed.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.ThumbDragDelta(System.Object,System.Windows.Controls.Primitives.DragDeltaEventArgs)">
+            <summary>
+            The thumb drag delta.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.CloseButtonClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The close button click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.MinimizeButtonClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The minimize button click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.RestoreButtonClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The restore button click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.MaximizeButtonClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The maximize button click.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.DraggableZoneGridMouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            The draggable zone grid mouse down.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.UI.Windows.ZolyWindow.DraggableZoneGridMouseRightButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            The draggable zone grid mouse right button up.
+            </summary>
+            <param name="sender">
+            The sender.
+            </param>
+            <param name="e">
+            The event arguments.
+            </param>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.ZolyWindow.ShowBorder">
+            <summary>
+            Gets or sets a value indicating whether show border.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.ZolyWindow.DraggableZoneGrid">
+            <summary>
+            Gets or sets the draggable zone grid.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.UI.Windows.ZolyWindow.CloseButton">
+            <summary>
+            Gets or sets the close button.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

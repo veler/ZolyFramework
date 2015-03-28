@@ -1,25 +1,63 @@
-D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI\bin\Debug\ZolyFramework.UI.dll
-D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI\bin\Debug\ZolyFramework.UI.pdb
-D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.dll
-D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.pdb
-D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI\obj\Debug\Themes\DefaultTheme.baml
-D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI\obj\Debug\Windows\ModernWindow.baml
-D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI\obj\Debug\Windows\ModernWindow.g.cs
-D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI\obj\Debug\ZolyFramework.UI_MarkupCompile.cache
-D:\Development\Projets\Projets Sources\Zoly Framework\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.g.resources
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.UI.dll
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.UI.pdb
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.Core.dll
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.Core.pdb
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.csprojResolveAssemblyReference.cache
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\App.baml
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\RedTheme.baml
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\DefaultTheme.baml
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\App.g.cs
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI_MarkupCompile.cache
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI_MarkupCompile.lref
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Generic.baml
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.g.resources
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.dll
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.pdb
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.UI.dll
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.UI.pdb
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\GalaSoft.MvvmLight.dll
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\System.Windows.Interactivity.dll
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.Core.dll
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.Core.pdb
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\GalaSoft.MvvmLight.xml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\System.Windows.Interactivity.xml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.csprojResolveAssemblyReference.cache
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\ColorSchema.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\BlueGreyTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\GreyTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\BrownTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\DeepOrangeTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\OrangeTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\LightGreenTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\GreenTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\AmberTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\YellowTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\LimeTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\TealTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\CyanTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\LightBlueTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\BlueTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\DeepPurpleTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\IndigoTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\PurpleTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\PinkTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Themes\RedTheme.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Generic.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI_MarkupCompile.cache
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI_MarkupCompile.lref
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\DatePicker.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\FlipView.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\ListBox.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\ComboBox.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\Flyout.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\Scroll.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\PasswordBox.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\CheckBox.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\RadioButton.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\TextBlock.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\ProgressBar.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\TextBox.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\ListView.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\MessageDialog.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\Menu.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\AppBar.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\Buttons.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\Themes\Controls\Window.baml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.g.resources
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.dll
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Debug\ZolyFramework.UI.pdb
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.UI.XML
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\bin\Debug\ZolyFramework.Core.xml

@@ -1,0 +1,243 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:ZolyFramework.UI.Windows.Controls"
+    mc:Ignorable="d">
+
+    <!-- ZolyBottomAppBar -->
+    <Style TargetType="{x:Type controls:ZolyBottomAppBar}">
+        <Setter Property="Panel.ZIndex" Value="1000"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:ZolyBottomAppBar}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="OpenStoryboard">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="OpenTextBlock">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="Border">
+                                <EasingDoubleKeyFrame KeyTime="0" Value="15"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="105">
+                                    <EasingDoubleKeyFrame.EasingFunction>
+                                        <QuinticEase EasingMode="EaseInOut"/>
+                                    </EasingDoubleKeyFrame.EasingFunction>
+                                </EasingDoubleKeyFrame>
+                            </DoubleAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="contentPresenter">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Key="CloseStoryboard">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="contentPresenter">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="Border">
+                                <EasingDoubleKeyFrame KeyTime="0" Value="105"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="15">
+                                    <EasingDoubleKeyFrame.EasingFunction>
+                                        <QuinticEase EasingMode="EaseInOut"/>
+                                    </EasingDoubleKeyFrame.EasingFunction>
+                                </EasingDoubleKeyFrame>
+                            </DoubleAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="OpenTextBlock">
+                                <DiscreteObjectKeyFrame KeyTime="0">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Visible}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid x:Name="ContainerGrid" Height="Auto"/>
+                        <Border x:Name="Border" Grid.Row="1" Height="15" Background="{DynamicResource ZolyAppBarClosedBackgroundBrush}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid ClipToBounds="True">
+                                <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="Auto" Visibility="Hidden"/>
+                                <controls:ZolyTextBlock x:Name="OpenTextBlock" TextWrapping="Wrap" Foreground="White" Width="Auto" FontSize="24" TextAlignment="Right" FontFamily="Segoe UI Symbol" FontWeight="Medium" Padding="0,0,11,0" Text="&#xE10C;" Height="Auto" Margin="0,-8.5,0,0"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsOpen" Value="False">
+                            <Setter Property="Background" TargetName="Border" Value="{DynamicResource ZolyAppBarClosedBackgroundBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsOpen" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard x:Name="OpenStoryboard_BeginStoryboard" Storyboard="{StaticResource OpenStoryboard}"/>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard x:Name="CloseStoryboard_BeginStoryboard" Storyboard="{StaticResource CloseStoryboard}"/>
+                            </Trigger.ExitActions>
+                            <Setter Property="Background" TargetName="Border" Value="{DynamicResource ZolyAppBarOpenedBackgroundBrush}" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                                <Condition Property="IsOpen" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Border" Value="{DynamicResource ZolyAppBarOpenedBackgroundBrush}" />
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- ZolyTopAppBar -->
+    <Style TargetType="{x:Type controls:ZolyTopAppBar}">
+        <Setter Property="Panel.ZIndex" Value="1000"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:ZolyTopAppBar}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="OpenStoryboard">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="OpenTextBlock">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="Border">
+                                <EasingDoubleKeyFrame KeyTime="0" Value="15"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="105">
+                                    <EasingDoubleKeyFrame.EasingFunction>
+                                        <QuinticEase EasingMode="EaseInOut"/>
+                                    </EasingDoubleKeyFrame.EasingFunction>
+                                </EasingDoubleKeyFrame>
+                            </DoubleAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="contentPresenter">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Key="CloseStoryboard">
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="contentPresenter">
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="Border">
+                                <EasingDoubleKeyFrame KeyTime="0" Value="105"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="15">
+                                    <EasingDoubleKeyFrame.EasingFunction>
+                                        <QuinticEase EasingMode="EaseInOut"/>
+                                    </EasingDoubleKeyFrame.EasingFunction>
+                                </EasingDoubleKeyFrame>
+                            </DoubleAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="OpenTextBlock">
+                                <DiscreteObjectKeyFrame KeyTime="0">
+                                    <DiscreteObjectKeyFrame.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </DiscreteObjectKeyFrame.Value>
+                                </DiscreteObjectKeyFrame>
+                                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Visible}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Border x:Name="Border" Height="15" Background="{DynamicResource ZolyAppBarClosedBackgroundBrush}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid ClipToBounds="True">
+                                <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="Auto" Visibility="Hidden"/>
+                                <controls:ZolyTextBlock x:Name="OpenTextBlock" TextWrapping="Wrap" Foreground="White" Width="Auto" FontSize="24" TextAlignment="Right" FontFamily="Segoe UI Symbol" FontWeight="Medium" Padding="0,0,11,0" Text="&#xE10C;" Height="Auto" Margin="0,-8.5,0,0"/>
+                            </Grid>
+                        </Border>
+                        <Grid x:Name="ContainerGrid" Grid.Row="1" Height="Auto"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsOpen" Value="False">
+                            <Setter Property="Background" TargetName="Border" Value="{DynamicResource ZolyAppBarClosedBackgroundBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsOpen" Value="True">
+                            <Trigger.EnterActions>
+                                <BeginStoryboard x:Name="OpenStoryboard_BeginStoryboard" Storyboard="{StaticResource OpenStoryboard}"/>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard x:Name="CloseStoryboard_BeginStoryboard" Storyboard="{StaticResource CloseStoryboard}"/>
+                            </Trigger.ExitActions>
+                            <Setter Property="Background" TargetName="Border" Value="{DynamicResource ZolyAppBarOpenedBackgroundBrush}" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                                <Condition Property="IsOpen" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Border" Value="{DynamicResource ZolyAppBarOpenedBackgroundBrush}" />
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- ZolyAppBarButton -->
+    <Style TargetType="{x:Type controls:ZolyAppBarButton}">
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="Width" Value="90" />
+        <Setter Property="Height" Value="90" />
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="BorderBrush" Value="{x:Null}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{DynamicResource ZolyRaisedButtonHoverTextBrush}"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Margin" Value="5,0" />
+        <Setter Property="Focusable" Value="False" />
+        <Setter Property="ContextMenuService.IsEnabled" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:ZolyAppBarButton}">
+                    <Border BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" Background="Transparent">
+                        <StackPanel Orientation="Vertical">
+                            <Grid x:Name="grid" Width="{Binding ActualHeight, ElementName=grid}" Height="50" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+                                <Ellipse Fill="{TemplateBinding Background}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                                <TextBlock HorizontalAlignment="Center" Height="Auto" Margin="0" TextWrapping="Wrap" Text="{TemplateBinding Icon}" VerticalAlignment="Center" Width="Auto" FontFamily="Segoe UI Symbol" FontSize="22"/>
+                            </Grid>
+                            <controls:ZolyTextBlock Text="{TemplateBinding Content}" Foreground="{TemplateBinding Foreground}" TextWrapping="Wrap" TextAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextOptions.TextFormattingMode="Display" Margin="0" FontSize="12"/>
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource ZolyRaisedButtonFocusedBackgroundBrush}"/>
+                            <Setter Property="BorderBrush" Value="{DynamicResource ZolyRaisedButtonFocusedBorderBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource ZolyRaisedButtonFocusedTextBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource ZolyRaisedButtonHoverBackgroundBrush}"/>
+                            <Setter Property="BorderBrush" Value="{DynamicResource ZolyRaisedButtonHoverBorderBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource ZolyRaisedButtonHoverTextBrush}"/>
+                        </Trigger>
+                        <Trigger Property="AreAnyTouchesOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource ZolyRaisedButtonHoverBackgroundBrush}"/>
+                            <Setter Property="BorderBrush" Value="{DynamicResource ZolyRaisedButtonHoverBorderBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource ZolyRaisedButtonHoverTextBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource ZolyRaisedButtonPressedBackgroundBrush}"/>
+                            <Setter Property="BorderBrush" Value="{DynamicResource ZolyRaisedButtonPressedBorderBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource ZolyRaisedButtonPressedTextBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="BorderBrush" Value="{DynamicResource ZolyRaisedButtonDisabledBorderBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource ZolyRaisedButtonDisabledTextBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

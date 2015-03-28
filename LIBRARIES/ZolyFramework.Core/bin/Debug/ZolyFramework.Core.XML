@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZolyFramework.Core</name>
+    </assembly>
+    <members>
+        <member name="T:ZolyFramework.Core.Environment.ApplicationInfo">
+            <summary>
+            Give some information about the app.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Environment.ApplicationInfo.GetName">
+            <summary>
+            Get application name.
+            </summary>
+            <returns>
+            The application name.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.Core.Environment.ApplicationInfo.GetVersion">
+            <summary>
+            Get application version.
+            </summary>
+            <returns>
+            The application version.
+            </returns>
+        </member>
+        <member name="T:ZolyFramework.Core.Environment.WindowsVersion">
+            <summary>
+            Define a Windows version.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.Core.Environment.OperatingSystemInfo">
+            <summary>
+            Get some operating system's information.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Environment.OperatingSystemInfo.RunningOnWindows8OrHigher">
+            <summary>
+            Check if the application is actually running under windows 8 or higher.
+            </summary>
+            <returns>
+            Returns True if the operating system is Windows 8 or higher.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.Core.Environment.OperatingSystemInfo.GetWindowsVersion">
+            <summary>
+            Get the current Windows version.
+            </summary>
+            <returns>
+            Return a <see cref="T:ZolyFramework.Core.Environment.WindowsVersion"/> value corresponding to the detected version of Windows.
+            </returns>
+        </member>
+        <member name="T:ZolyFramework.Core.Shortcut.CShellLink">
+            <summary>
+            The shell link.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.Core.Shortcut.Shortcut">
+            <summary>
+            Provide some methods to create shortcuts files (.LNK).
+            </summary>
+        </member>
+        <member name="F:ZolyFramework.Core.Shortcut.Shortcut.StartMenuProgramsPath">
+            <summary>
+            The start menu programs path.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Shortcut.Shortcut.CreateShortcutAsync(System.String,System.Boolean)">
+            <summary>
+            Create a new shortcut.
+            </summary>
+            <param name="lnkFilePath">
+            The LNK file path.
+            </param>
+            <param name="overrides">
+            overrides if already exists.
+            </param>
+            <returns>
+            The <see cref="T:System.Threading.Tasks.Task"/>.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.Core.Shortcut.Shortcut.CreateShortcutAsync(System.String,System.Guid,System.Boolean)">
+            <summary>
+            Create a new shortcut.
+            </summary>
+            <param name="lnkFilePath">
+            The LNK file path.
+            </param>
+            <param name="guid">
+            The GUID of the shortcut.
+            </param>
+            <param name="overrides">
+            overrides if already exists.
+            </param>
+            <returns>
+            The <see cref="T:System.Threading.Tasks.Task"/>.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.Core.Shortcut.Shortcut.CreateShortcut(System.String,System.Boolean)">
+            <summary>
+            Create a new shortcut.
+            </summary>
+            <param name="lnkFilePath">
+            The LNK file path.
+            </param>
+            <param name="overrides">
+            overrides if already exists.
+            </param>
+        </member>
+        <member name="M:ZolyFramework.Core.Shortcut.Shortcut.CreateShortcut(System.String,System.Guid,System.Boolean)">
+            <summary>
+            Create a new shortcut.
+            </summary>
+            <param name="lnkFilePath">
+            The LNK file path.
+            </param>
+            <param name="guid">
+            The GUID.
+            </param>
+            <param name="overrides">
+            overrides if already exists.
+            </param>
+        </member>
+        <member name="T:ZolyFramework.Core.Win32.ErrorHelper">
+            <summary>
+            Check automatically if a PInvoke returns an error.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.ErrorHelper.VerifySucceeded(System.UInt32)">
+            <summary>
+            Check automatically if a PInvoke returns an error.
+            </summary>
+            <param name="hresult">
+            The HRESULT.
+            </param>
+            <exception cref="T:System.Runtime.InteropServices.COMException">
+            Correspond to the HRESULT number.
+            </exception>
+        </member>
+        <member name="T:ZolyFramework.Core.Win32.PropertySystem.PropertyKey">
+            <summary>
+            Defines a unique key for a Shell Property
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.#ctor(System.Guid,System.Int32)">
+            <summary>
+            PropertyKey Constructor
+            </summary>
+            <param name="formatId">A unique GUID for the property</param>
+            <param name="propertyId">Property identifier (PID)</param>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.#ctor(System.String,System.Int32)">
+            <summary>
+            PropertyKey Constructor
+            </summary>
+            <param name="formatId">A string represenstion of a GUID for the property</param>
+            <param name="propertyId">Property identifier (PID)</param>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.Equals(ZolyFramework.Core.Win32.PropertySystem.PropertyKey)">
+            <summary>
+            Returns whether this object is equal to another. This is vital for performance of value types.
+            </summary>
+            <param name="other">The object to compare against.</param>
+            <returns>Equality result.</returns>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.GetHashCode">
+            <summary>
+            Returns the hash code of the object. This is vital for performance of value types.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.Equals(System.Object)">
+            <summary>
+            Returns whether this object is equal to another. This is vital for performance of value types.
+            </summary>
+            <param name="obj">The object to compare against.</param>
+            <returns>Equality result.</returns>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.op_Equality(ZolyFramework.Core.Win32.PropertySystem.PropertyKey,ZolyFramework.Core.Win32.PropertySystem.PropertyKey)">
+            <summary>
+            Implements the == (equality) operator.
+            </summary>
+            <param name="propKey1">First property key to compare.</param>
+            <param name="propKey2">Second property key to compare.</param>
+            <returns>true if object a equals object b. false otherwise.</returns>        
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.op_Inequality(ZolyFramework.Core.Win32.PropertySystem.PropertyKey,ZolyFramework.Core.Win32.PropertySystem.PropertyKey)">
+            <summary>
+            Implements the != (inequality) operator.
+            </summary>
+            <param name="propKey1">First property key to compare</param>
+            <param name="propKey2">Second property key to compare.</param>
+            <returns>true if object a does not equal object b. false otherwise.</returns>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.ToString">
+            <summary>
+            Override ToString() to provide a user friendly string representation
+            </summary>
+            <returns>String representing the property key</returns>        
+        </member>
+        <member name="P:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.FormatId">
+            <summary>
+            A unique GUID for the property
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.Core.Win32.PropertySystem.PropertyKey.PropertyId">
+            <summary>
+             Property identifier (PID)
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.Core.Win32.PropertySystem.PropVariant">
+            <summary>
+            Represents the OLE struct PROPVARIANT.
+            This class is intended for internal use only.
+            </summary>
+            <remarks>
+            Originally sourced from http://blogs.msdn.com/adamroot/pages/interop-with-propvariants-in-net.aspx
+            and modified to support additional types including vectors and ability to set values
+            </remarks>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.FromObject(System.Object)">
+            <summary>
+            Attempts to create a PropVariant by finding an appropriate constructor.
+            </summary>
+            <param name="value">Object from which PropVariant should be created.</param>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor">
+            <summary>
+            Default constrcutor
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.String)">
+            <summary>
+            Set a string value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.String[])">
+            <summary>
+            Set a string vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Boolean[])">
+            <summary>
+            Set a bool vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Int16[])">
+            <summary>
+            Set a short vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.UInt16[])">
+            <summary>
+            Set a short vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Int32[])">
+            <summary>
+            Set an int vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.UInt32[])">
+            <summary>
+            Set an uint vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Int64[])">
+            <summary>
+            Set a long vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.UInt64[])">
+            <summary>
+            Set a ulong vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Double[])">
+            <summary>>
+            Set a double vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.DateTime[])">
+            <summary>
+            Set a DateTime vector
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Boolean)">
+            <summary>
+            Set a bool value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.DateTime)">
+            <summary>
+            Set a DateTime value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Byte)">
+            <summary>
+            Set a byte value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.SByte)">
+            <summary>
+            Set a sbyte value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Int16)">
+            <summary>
+            Set a short value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.UInt16)">
+            <summary>
+            Set an unsigned short value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Int32)">
+            <summary>
+            Set an int value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.UInt32)">
+            <summary>
+            Set an unsigned int value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Decimal)">
+            <summary>
+            Set a decimal  value
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Decimal[])">
+            <summary>
+            Create a PropVariant with a contained decimal array.
+            </summary>
+            <param name="value">Decimal array to wrap.</param>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Single)">
+            <summary>
+            Create a PropVariant containing a float type.
+            </summary>        
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Single[])">
+            <summary>
+            Creates a PropVariant containing a float[] array.
+            </summary>        
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Int64)">
+            <summary>
+            Set a long
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.UInt64)">
+            <summary>
+            Set a ulong
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.#ctor(System.Double)">
+            <summary>
+            Set a double
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.SetIUnknown(System.Object)">
+            <summary>
+            Set an IUnknown value
+            </summary>
+            <param name="value">The new value to set.</param>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.SetSafeArray(System.Array)">
+            <summary>
+            Set a safe array value
+            </summary>
+            <param name="array">The new value to set.</param>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.Dispose">
+            <summary>
+            Disposes the object, calls the clear function.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.Finalize">
+            <summary>
+            Finalizer
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.PropertySystem.PropVariant.ToString">
+            <summary>
+            Provides an simple string representation of the contained data and type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ZolyFramework.Core.Win32.PropertySystem.PropVariant.VarType">
+            <summary>
+            Gets or sets the variant type.
+            </summary>
+        </member>
+        <member name="P:ZolyFramework.Core.Win32.PropertySystem.PropVariant.IsNullOrEmpty">
+            <summary>
+            Checks if this has an empty or null value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ZolyFramework.Core.Win32.PropertySystem.PropVariant.Value">
+            <summary>
+            Gets the variant value.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.Core.Win32.User32">
+            <summary>
+            Provide some functions of User32.
+            </summary>
+        </member>
+        <member name="T:ZolyFramework.Core.Win32.Wm">
+            <summary>
+            The Windows Message class.
+            </summary>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.Wm.GetMousePosition">
+            <summary>
+            The get mouse position.
+            </summary>
+            <returns>
+            The <see cref="T:System.Windows.Point"/>.
+            </returns>
+        </member>
+        <member name="M:ZolyFramework.Core.Win32.Wm.ShowWindowSystemMenu(System.Windows.Window)">
+            <summary>
+            Show window system menu (Close, Move, Restore, Minimize, Maximize...).
+            </summary>
+            <param name="window">
+            The window.
+            </param>
+        </member>
+    </members>
+</doc>

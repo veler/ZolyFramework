@@ -1,0 +1,94 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:ZolyFramework.UI.Windows.Controls"
+    mc:Ignorable="d">
+
+    <!-- ZolyCheckBox -->
+    <Style x:Key="ZolyCheckBoxFocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource ZolyCheckBoxEnabledTextBrush}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ZolyCheckBoxOptionMarkFocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Rectangle Margin="14,0,0,0" SnapsToDevicePixels="true" Stroke="{DynamicResource ZolyCheckBoxEnabledTextBrush}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type controls:ZolyCheckBox}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource ZolyCheckBoxFocusVisual}"/>
+        <Setter Property="Background" Value="{DynamicResource ZolyCheckBoxEnabledBackground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ZolyCheckBoxEnabledBorder}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ZolyCheckBoxEnabledTextBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Height" Value="36"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:ZolyCheckBox}">
+                    <Grid x:Name="templateRoot" Background="Transparent" SnapsToDevicePixels="True">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border x:Name="checkBoxBorder" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                            <Grid x:Name="markGrid">
+                                <Viewbox Margin="3" Stretch="Fill" Width="10" Height="10">
+                                    <Path x:Name="optionMark" Data="F1 M 9.97498,1.22334L 4.6983,9.09834L 4.52164,9.09834L 0,5.19331L 1.27664,3.52165L 4.255,6.08833L 8.33331,1.52588e-005L 9.97498,1.22334 Z " Fill="{DynamicResource ZolyCheckBoxEnabledGlyph}" Margin="1" Opacity="0" Stretch="None"/>
+                                </Viewbox>
+                                <Rectangle x:Name="indeterminateMark" Fill="{DynamicResource ZolyCheckBoxEnabledGlyph}" Margin="3" Opacity="0"/>
+                            </Grid>
+                        </Border>
+                        <ContentPresenter x:Name="contentPresenter" Grid.Column="1" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasContent" Value="true">
+                            <Setter Property="FocusVisualStyle" Value="{StaticResource ZolyCheckBoxOptionMarkFocusVisual}"/>
+                            <Setter Property="Padding" Value="4,-1,0,0"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Background" TargetName="checkBoxBorder" Value="{DynamicResource ZolyCheckBoxMouseOverBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{DynamicResource ZolyCheckBoxMouseOverBorder}"/>
+                            <Setter Property="Fill" TargetName="optionMark" Value="{DynamicResource ZolyCheckBoxMouseOverGlyph}"/>
+                            <Setter Property="Fill" TargetName="indeterminateMark" Value="{DynamicResource ZolyCheckBoxMouseOverGlyph}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Background" TargetName="checkBoxBorder" Value="{DynamicResource ZolyCheckBoxDisabledBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{DynamicResource ZolyCheckBoxDisabledBorder}"/>
+                            <Setter Property="Fill" TargetName="optionMark" Value="{DynamicResource ZolyCheckBoxDisabledGlyph}"/>
+                            <Setter Property="Fill" TargetName="indeterminateMark" Value="{DynamicResource ZolyCheckBoxDisabledGlyph}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource ZolyCheckBoxDisabledTextBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Background" TargetName="checkBoxBorder" Value="{DynamicResource ZolyCheckBoxPressedBackground}"/>
+                            <Setter Property="BorderBrush" TargetName="checkBoxBorder" Value="{DynamicResource ZolyCheckBoxPressedBorder}"/>
+                            <Setter Property="Fill" TargetName="optionMark" Value="{DynamicResource ZolyCheckBoxPressedGlyph}"/>
+                            <Setter Property="Fill" TargetName="indeterminateMark" Value="{DynamicResource ZolyCheckBoxPressedGlyph}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter Property="Opacity" TargetName="optionMark" Value="1"/>
+                            <Setter Property="Opacity" TargetName="indeterminateMark" Value="0"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="{x:Null}">
+                            <Setter Property="Opacity" TargetName="optionMark" Value="0"/>
+                            <Setter Property="Opacity" TargetName="indeterminateMark" Value="1"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

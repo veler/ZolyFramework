@@ -1,0 +1,7 @@
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.Core\bin\Release\ZolyFramework.Core.XML
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.Core\bin\Release\ZolyFramework.Core.dll
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.Core\bin\Release\ZolyFramework.Core.pdb
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.Core\bin\Release\ZolyFramework.Core.dll.CodeAnalysisLog.xml
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.Core\bin\Release\ZolyFramework.Core.dll.lastcodeanalysissucceeded
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.Core\obj\Release\ZolyFramework.Core.dll
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.Core\obj\Release\ZolyFramework.Core.pdb

@@ -1,0 +1,83 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:ZolyFramework.UI.Windows.Controls"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:blurBackground="clr-namespace:ZolyFramework.UI.Behaviors.BlurBackground"
+    mc:Ignorable="d">
+
+    <!-- ZolyMessageDialog -->
+    <Style TargetType="{x:Type controls:ZolyMessageDialog}">
+        <Setter Property="Panel.ZIndex" Value="1050"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:ZolyMessageDialog}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="OpeningStoryboard">
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(blurBackground:BlurBackgroundEffect.MaskBrush).(SolidColorBrush.Color)" Storyboard.TargetName="BlurBackgroundEffect">
+                                <EasingColorKeyFrame KeyTime="0" Value="#00333333"/>
+                                <EasingColorKeyFrame KeyTime="0:0:1" Value="#B2333333">
+                                    <EasingColorKeyFrame.EasingFunction>
+                                        <CircleEase EasingMode="EaseOut"/>
+                                    </EasingColorKeyFrame.EasingFunction>
+                                </EasingColorKeyFrame>
+                            </ColorAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(blurBackground:BlurBackgroundEffect.Radius)" Storyboard.TargetName="BlurBackgroundEffect">
+                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="4">
+                                    <EasingDoubleKeyFrame.EasingFunction>
+                                        <CircleEase EasingMode="EaseOut"/>
+                                    </EasingDoubleKeyFrame.EasingFunction>
+                                </EasingDoubleKeyFrame>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <Grid MinWidth="400" MinHeight="400">
+                        <i:Interaction.Behaviors>
+                            <blurBackground:BlurBackgroundEffect x:Name="BlurBackgroundEffect" Radius="0" MaskBrush="#00333333" Visual="{Binding Container, RelativeSource={RelativeSource TemplatedParent}}"/>
+                        </i:Interaction.Behaviors>
+                        <Grid Margin="0" Background="{DynamicResource ZolyMessageDialogBackgroundBrush}" VerticalAlignment="Center" MinWidth="100" MinHeight="100">
+                            <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="controls:ZolyMessageDialog.Opened">
+                            <BeginStoryboard Storyboard="{StaticResource OpeningStoryboard}"/>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!-- ZolyMessageDialogContentPanel -->
+    <Style TargetType="{x:Type controls:ZolyMessageDialogContentPanel}">
+        <Setter Property="Padding" Value="0, 15, 0, 0"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:ZolyMessageDialogContentPanel}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <controls:ZolyTextBlock x:Name="TitleTextBlock" Margin="10,5,0,0" Text="{TemplateBinding Title}" Height="50" FontSize="30" Foreground="{TemplateBinding Foreground}"/>
+                        <ContentPresenter Grid.Row="1"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Title" Value="" >
+                            <Setter Property="Visibility" Value="Collapsed" TargetName="TitleTextBlock"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+</ResourceDictionary>

@@ -1,7 +1,16 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Consts.cs" company="Etienne BAUDOUX">
+//   
+// </copyright>
+// <summary>
+//   Defines the Consts type.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace ZolyFramework.Core.Win32
 {
+    using System;
+
     internal class Consts
     {
         internal const int WM_SYSCOMMAND = 0x112;
@@ -14,7 +23,6 @@ namespace ZolyFramework.Core.Win32
 
         internal const UInt32 MF_GRAYED = 0x00000001;
 
-        // http://msdn.microsoft.com/en-us/library/windows/desktop/ms646360(v=vs.85).aspx
         internal const UInt32 SC_MAXIMIZE = 0xF030;
 
         internal const UInt32 SC_MINIMIZE = 0xF020;

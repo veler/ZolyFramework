@@ -4,17 +4,17 @@
 library
 C#
 .cs
-D:\Development\Projets\Projets Sources\Zoly Framework\LIBRARIES\ZolyFramework.UI\obj\Release\
+D:\Development\Projets\Projets Sources\PasswordZanager\LIBRARIES\ZolyFramework.UI\obj\Release\
 ZolyFramework.UI
 none
 false
 CODE_ANALYSIS;TRACE
 
-2-235161701
+39-1435303385
 
-91341573103
-12-1401562060
-Themes\DefaultTheme.xaml;Themes\Generic.xaml;
+561915451704
+14-1074311178
+Themes\Controls\DatePicker.xaml;Themes\Controls\FlipView.xaml;Themes\Controls\ListBox.xaml;Themes\Controls\ComboBox.xaml;Themes\Controls\Flyout.xaml;Themes\Controls\Scroll.xaml;Themes\Controls\PasswordBox.xaml;Themes\Controls\CheckBox.xaml;Themes\Controls\RadioButton.xaml;Themes\Controls\TextBlock.xaml;Themes\Controls\ProgressBar.xaml;Themes\Controls\TextBox.xaml;Themes\Controls\ListView.xaml;Themes\Controls\MessageDialog.xaml;Themes\Controls\Menu.xaml;Themes\Controls\AppBar.xaml;Themes\Controls\Buttons.xaml;Themes\Controls\Window.xaml;Themes\ColorSchema.xaml;Themes\Themes\BlueGreyTheme.xaml;Themes\Themes\GreyTheme.xaml;Themes\Themes\BrownTheme.xaml;Themes\Themes\DeepOrangeTheme.xaml;Themes\Themes\OrangeTheme.xaml;Themes\Themes\LightGreenTheme.xaml;Themes\Themes\GreenTheme.xaml;Themes\Themes\AmberTheme.xaml;Themes\Themes\YellowTheme.xaml;Themes\Themes\LimeTheme.xaml;Themes\Themes\TealTheme.xaml;Themes\Themes\CyanTheme.xaml;Themes\Themes\LightBlueTheme.xaml;Themes\Themes\BlueTheme.xaml;Themes\Themes\DeepPurpleTheme.xaml;Themes\Themes\IndigoTheme.xaml;Themes\Themes\PurpleTheme.xaml;Themes\Themes\PinkTheme.xaml;Themes\Themes\RedTheme.xaml;Themes\Generic.xaml;
 
-True
+False
 
